@@ -1,0 +1,48 @@
+# Copyright (C) 2013 FluidVids for WordPress
+# This file is distributed under the same license as the FluidVids for WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: FluidVids for WordPress 0.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/fluidvids\n"
+"POT-Creation-Date: 2013-12-06 18:24:39+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-fluidvids.php:170
+msgid "FluidVids"
+msgstr ""
+
+#: class-fluidvids.php:177
+msgid "Video Site URLs"
+msgstr ""
+
+#: class-fluidvids.php:198
+msgid "Add video player URLs with this format %s. To add more players, specify the domains that you need FluidVids to check against, be sure to include the subdomain for any videos that have a src with a subdomain."
+msgstr ""
+
+#: class-fluidvids.php:225
+msgid "Settings"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Fluidvids for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/fluidvids/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A WordPress plugin for FluidVids. FluidVids is a raw JavaScript solution for responsive and fluid YouTube and Vimeo video embeds. It's extremely lightweight."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Ulrich Pogson"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://ulrich.pogson.ch/"
+msgstr ""
