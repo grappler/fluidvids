@@ -28,7 +28,7 @@ class FluidVids {
 	 *
 	 * @var     string
 	 */
-	protected $plugin_version = '1.0.0';
+	protected $plugin_version = '1.1.0';
 
 	/**
 	 * fluidvids version, used for cache-busting of script file references.

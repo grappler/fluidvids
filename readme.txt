@@ -18,6 +18,7 @@ Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Add more custom/res
 
 The plugin can also be found on [GitHub](https://github.com/grappler/fluidvids).
 
+* Thank you [Todd Motto](http://toddmot.to/) for [FluidVid.js](https://github.com/toddmotto/fluidvids)
 * Thank you [Tom McFarlin](http://tommcfarlin.com/) for the [WordPress Plugin Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate)
 
 == Installation ==
@@ -54,10 +55,16 @@ You can add additional players in the media settings.
 
 == Changelog ==
 
+= 1.1.0 =
+* Update FluidVids to 2.1.0 - fixes an IE8 bug
+
 = 1.0.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+* Update FluidVids to 2.1.0
 
 = 1.0.0 =
 * This is the first release.
