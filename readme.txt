@@ -3,7 +3,7 @@ Contributors: grapplerulrich
 Donate link: https://github.com/grappler/fluidvids
 Tags: fluidvids, responsive, youtube, vimeo, iframe, video
 Requires at least: 3.5
-Tested up to: 3.7.1
+Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,13 +55,21 @@ You can add additional players in the media settings.
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.2.0 - 1st March 2014 =
+* Update FluidVids to 2.2.0
+ - XHR/Ajax content support via new apply() method to requery DOM
+ - Add AMD support
+
+= 1.1.0 - 16th December 2013 =
 * Update FluidVids to 2.1.0 - fixes an IE8 bug
 
-= 1.0.0 =
+= 1.0.0 - 6th December 2013 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+* Update FluidVids to 2.2.0
 
 = 1.1.0 =
 * Update FluidVids to 2.1.0
