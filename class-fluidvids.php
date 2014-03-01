@@ -28,7 +28,7 @@ class FluidVids {
 	 *
 	 * @var     string
 	 */
-	protected $plugin_version = '1.1.0';
+	protected $plugin_version = '1.2.0';
 
 	/**
 	 * fluidvids version, used for cache-busting of script file references.
@@ -37,7 +37,7 @@ class FluidVids {
 	 *
 	 * @var     string
 	 */
-	protected $fluidvids_version = '2.1.0';
+	protected $fluidvids_version = '2.2.0';
 
 	/**
 	 * Unique identifier for your plugin.
@@ -182,7 +182,8 @@ class FluidVids {
 
 		register_setting(
 			'media',
-			'fluidvids-urls'
+			'fluidvids-urls',
+			'esc_attr'
 		);
 
 	}
