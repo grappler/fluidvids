@@ -27,8 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 require_once( plugin_dir_path( __FILE__ ) . 'class-fluidvids.php' );
 
-// Register hooks that are fired when the plugin is activated, deactivated, and uninstalled, respectively.
+// Register hooks that are fired when the plugin is activated respectively.
 register_activation_hook( __FILE__, array( 'Fluidvids', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Fluidvids', 'deactivate' ) );
 
 FluidVids::get_instance();
