@@ -3,16 +3,16 @@ Contributors: grapplerulrich
 Donate link: https://github.com/grappler/fluidvids
 Tags: fluidvids, responsive, youtube, vimeo, iframe, video
 Requires at least: 3.5
-Tested up to: 3.8.1
+Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Add more custom/responsive players easily.
+Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Easily add additional video players and selectors in the settings.
 
 == Description ==
 
-Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Add more custom/responsive players easily in the media settings
+Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Add more video players and selectors easily in the media settings
 
 == Credits ==
 
@@ -55,18 +55,31 @@ You can add additional players in the media settings.
 
 == Changelog ==
 
+= 1.3.0 - 21st June 2014 =
+* Update FluidVids to 2.3.0
+ - Add support for videos where `height > width`
+ - Multiple `selector` support and CSS change to unrestrict element type
+ - Add `npm` entry point
+ - Change `apply()` to `render()` for better naming
+ - Use while loop for and improved loop perf
+* Add option to set selectors
+
 = 1.2.0 - 1st March 2014 =
 * Update FluidVids to 2.2.0
  - XHR/Ajax content support via new apply() method to requery DOM
  - Add AMD support
 
 = 1.1.0 - 16th December 2013 =
-* Update FluidVids to 2.1.0 - fixes an IE8 bug
+* Update FluidVids to 2.1.0
+ - Fix IE8 bug
 
 = 1.0.0 - 6th December 2013 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+* Update FluidVids to 2.3.0
 
 = 1.2.0 =
 * Update FluidVids to 2.2.0
