@@ -153,7 +153,7 @@ class FluidVids {
 
 		$html = '<script>';
 			$html .= 'fluidvids.init({';
-				$html .= 'selector: [' . $this->esc_fluidvids( $selectors ) . ']';
+				$html .= 'selector: [' . $this->esc_fluidvids( $selectors ) . '],';
 				$html .= 'players: [' . $this->esc_fluidvids( $players ) . ']';
 			$html .= '});';
 		$html .=' </script>';
