@@ -1,4 +1,4 @@
-=== FluidVids for WordPress ===
+=== Fluidvids for WordPress ===
 Contributors: grapplerulrich
 Donate link: https://github.com/grappler/fluidvids
 Tags: fluidvids, responsive, youtube, vimeo, iframe, video
@@ -12,13 +12,18 @@ Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Easily add addition
 
 == Description ==
 
-Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Add more video players and selectors easily in the media settings
+Standalone JavaScript for fluid YouTube/Vimeo iframe embeds. Add more video players and selectors easily in the media settings.
+
+Description of the Fluidvids script
+"Fluidvids is a 1KB standalone module that provides a fluid solution for video embeds. Fluidvids has the ability for custom players to be added as well as support for dynamically injected (XHR/Ajax/createElement) videos.
+
+Check out a [demo of fluidvids](http://toddmotto.com/labs/fluidvids)"
 
 == Credits ==
 
 The plugin can also be found on [GitHub](https://github.com/grappler/fluidvids).
 
-* Thank you [Todd Motto](http://toddmot.to/) for [FluidVid.js](https://github.com/toddmotto/fluidvids)
+* Thank you [Todd Motto](http://toddmot.to/) for [fluidvids.js](https://github.com/toddmotto/fluidvids)
 * Thank you [Tom McFarlin](http://tommcfarlin.com/) for the [WordPress Plugin Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate)
 
 == Installation ==
@@ -26,7 +31,7 @@ The plugin can also be found on [GitHub](https://github.com/grappler/fluidvids).
 = Installing from the WordPress dashboard =
 
 1. Navigate to the 'Add New' plugins dashboard
-2. Search for 'FluidVids for WordPress'
+2. Search for 'Fluidvids for WordPress'
 3. Click 'Install Now'
 4. Activate the plugin on the WordPress Plugin dashboard
 
@@ -55,8 +60,12 @@ You can add additional players in the media settings.
 
 == Changelog ==
 
+= 1.4.0 - 25nd June 2014 =
+* Update Fluidvids to 2.4.0
+ - Fix bug for comparing width/height attrs `> 1000`
+
 = 1.3.0 - 21st June 2014 =
-* Update FluidVids to 2.3.0
+* Update Fluidvids to 2.3.0
  - Add support for videos where `height > width`
  - Multiple `selector` support and CSS change to unrestrict element type
  - Add `npm` entry point
@@ -65,12 +74,12 @@ You can add additional players in the media settings.
 * Add option to set selectors
 
 = 1.2.0 - 1st March 2014 =
-* Update FluidVids to 2.2.0
+* Update Fluidvids to 2.2.0
  - XHR/Ajax content support via new apply() method to requery DOM
  - Add AMD support
 
 = 1.1.0 - 16th December 2013 =
-* Update FluidVids to 2.1.0
+* Update Fluidvids to 2.1.0
  - Fix IE8 bug
 
 = 1.0.0 - 6th December 2013 =
@@ -78,14 +87,17 @@ You can add additional players in the media settings.
 
 == Upgrade Notice ==
 
+= 1.4.0 =
+* Update Fluidvids to 2.4.0
+
 = 1.3.0 =
-* Update FluidVids to 2.3.0
+* Update Fluidvids to 2.3.0
 
 = 1.2.0 =
-* Update FluidVids to 2.2.0
+* Update Fluidvids to 2.2.0
 
 = 1.1.0 =
-* Update FluidVids to 2.1.0
+* Update Fluidvids to 2.1.0
 
 = 1.0.0 =
 * This is the first release.

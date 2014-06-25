@@ -37,7 +37,7 @@ class FluidVids {
 	 *
 	 * @var     string
 	 */
-	protected $fluidvids_version = '2.3.0';
+	protected $fluidvids_version = '2.4.0';
 
 	/**
 	 * Unique identifier for your plugin.
