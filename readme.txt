@@ -60,6 +60,10 @@ You can add additional players in the media settings.
 
 == Changelog ==
 
+= 1.4.1 - 19th July 2014 =
+* Update Fluidvids to 2.4.1
+ - Fix bug for class names already existing on host element
+
 = 1.4.0 - 25nd June 2014 =
 * Update Fluidvids to 2.4.0
  - Fix bug for comparing width/height attrs `> 1000`
@@ -86,6 +90,9 @@ You can add additional players in the media settings.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+* Update Fluidvids to 2.4.1
 
 = 1.4.0 =
 * Update Fluidvids to 2.4.0

@@ -11,7 +11,7 @@
  * Plugin Name: FluidVids for WordPress
  * Plugin URI:  http://wordpress.org/plugins/fluidvids/
  * Description: A WordPress plugin for FluidVids. FluidVids is a raw JavaScript solution for responsive and fluid YouTube and Vimeo video embeds. It's extremely lightweight.
- * Version:     1.4.0
+ * Version:     1.4.1
  * Author:      Ulrich Pogson
  * Author URI:  http://ulrich.pogson.ch/
  * Text Domain: fluidvids
