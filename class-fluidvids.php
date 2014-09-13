@@ -81,9 +81,13 @@ class FluidVids {
 		// Load plugin text domain
 		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 
-		// Load public-facing JavaScript
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-		add_action( 'wp_footer', array( $this, 'fluidvids_options' ), 21 );
+		// Load public-facing JavaScript only when needed
+		// WordPress [video] shortcode - This does not make sense as the shortcode should be responsive.
+		add_filter( 'wp_video_shortcode', array( $this, 'load_scripts' ) );
+		// WordPress oembed urls http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F
+		add_filter( 'embed_oembed_html',  array( $this, 'load_scripts' ) );
+		// Jetpack embed shortcodes http://jetpack.me/support/shortcode-embeds/
+		add_filter( 'video_embed_html',   array( $this, 'load_scripts' ) );
 
 		// Add action links
 		$plugin_basename = plugin_basename( plugin_dir_path( __FILE__ ) . 'fluidvids.php' );
@@ -128,17 +132,6 @@ class FluidVids {
 	}
 
 	/**
-	 * Register and enqueues public-facing JavaScript files.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_scripts() {
-
-		wp_enqueue_script( $this->plugin_slug, plugins_url( '/js/fluidvids.min.js', __FILE__ ), array(), $this->fluidvids_version, true );
-
-	}
-
-	/**
 	 * Add fluidvids options
 	 *
 	 * @since    1.0.0
@@ -151,7 +144,7 @@ class FluidVids {
 		$selectors = isset( $this->setting_fluidvids['selectors'] ) ? $standard_selectors . $this->setting_fluidvids['selectors'] : $standard_selectors;
 		$players = isset( $this->setting_fluidvids['players'] ) ? $standard_players . $this->setting_fluidvids['players'] : $standard_players;
 
-		$html = '<script>';
+		$html = '<script id="wp-fluidvids-js">';
 			$html .= 'fluidvids.init({';
 				$html .= 'selector: [' . $this->esc_fluidvids( $selectors ) . '],';
 				$html .= 'players: [' . $this->esc_fluidvids( $players ) . ']';
@@ -159,6 +152,25 @@ class FluidVids {
 		$html .=' </script>';
 
 		echo $html;
+
+	}
+
+	/**
+	 * Loads scripts
+	 *
+	 * @since    1.4.2
+	 */
+	public function load_scripts( $html ) {
+
+		if ( empty( $html ) || ! is_string( $html ) ) {
+			return $html;
+		}
+
+		$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+		wp_enqueue_script( $this->plugin_slug, plugins_url( '/js/fluidvids' . $suffix . '.js', __FILE__ ), array(), $this->fluidvids_version, true );
+		add_action( 'wp_footer', array( $this, 'fluidvids_options' ), 21 );
+
+		return $html;
 
 	}
 
